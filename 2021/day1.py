@@ -1,6 +1,6 @@
 # https://adventofcode.com/2021/day/1
 # How many measurements are larger than the previous measurement?
-def run_part1(values):
+def solve_part1(values):
   count = 0
   prev = None
   for value in values:
@@ -12,7 +12,7 @@ def run_part1(values):
 
 # https://adventofcode.com/2021/day/1#part2
 # How many sums are larger than the previous sum?
-def run_part2(values):
+def solve_part2(values):
   if len(values) <= 3:
     return 0
 
