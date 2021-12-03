@@ -1,18 +1,6 @@
-# https://adventofcode.com/2021/day/1
-# How many measurements are larger than the previous measurement?
-def solve_part1(values):
-  count = 0
-  prev = None
-  for value in values:
-    if prev != None:
-      if value - prev > 0:
-        count += 1
-    prev = value
-  return count
-
 # https://adventofcode.com/2021/day/1#part2
 # How many sums are larger than the previous sum?
-def solve_part2(values):
+def solve(values):
   if len(values) <= 3:
     return 0
 
@@ -30,8 +18,8 @@ def solve_part2(values):
   return count
 
 if __name__ == '__main__':
-  f = open('input/day1.txt')
+  f = open('input.txt')
   values = [int(val) for val in f.readlines()]
 
-  res = run_part2(values)
+  res = solve(values)
   print(res)
