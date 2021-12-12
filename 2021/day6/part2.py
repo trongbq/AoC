@@ -1,4 +1,4 @@
-# https://adventofcode.com/2021/day/5
+# https://adventofcode.com/2021/day/6
 def solve(timers, days):
   if len(timers) == 0:
     return 0

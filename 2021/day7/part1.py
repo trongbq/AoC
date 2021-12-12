@@ -1,4 +1,4 @@
-# https://adventofcode.com/2021/day/5
+# https://adventofcode.com/2021/day/7
 def solve(positions):
   if len(positions) == 0:
     return 0

@@ -1,4 +1,4 @@
-# https://adventofcode.com/2021/day/5
+# https://adventofcode.com/2021/day/9
 def solve(matrix):
   if len(matrix) == 0:
     return 0
