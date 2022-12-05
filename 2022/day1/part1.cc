@@ -7,7 +7,7 @@ using namespace std;
 int main() {
     string line;
     ifstream myfile("input.txt");
-    
+
     int max = 0;
     int current = 0;
     if (myfile.is_open()) {

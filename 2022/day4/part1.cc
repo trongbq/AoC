@@ -25,13 +25,13 @@ int main() {
             int second_start = stoi(second.substr(0, second_dash));
             int second_end = stoi(second.substr(second_dash + 1));
 
-            if ((first_start <= second_start && first_end >= second_end) 
+            if ((first_start <= second_start && first_end >= second_end)
                 || (second_start <= first_start && second_end >= first_end)) {
                 total++;
             }
         }
         myfile.close();
-       
+
         cout << total << '\n';
     } else {
         cout << "Unable to open file" << '\n';

@@ -49,7 +49,7 @@ int main() {
             }
         }
         myfile.close();
-       
+
         cout << total << '\n';
     } else {
         cout << "Unable to open file" << '\n';

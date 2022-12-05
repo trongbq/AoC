@@ -22,7 +22,7 @@ int main() {
         while (getline(myfile, line)) {
             map<char, int> mem = {};
             int begin_second = line.length() / 2;
-            
+
             for (int i = 0; i < begin_second; i++) {
                 char item_type = line.at(i);
                 if (mem.find(item_type) != mem.end()) {
@@ -41,7 +41,7 @@ int main() {
             }
         }
         myfile.close();
-       
+
         cout << total << '\n';
     } else {
         cout << "Unable to open file" << '\n';
