@@ -3,7 +3,6 @@
 #include <map>
 #include <regex>
 #include <string>
-#include <vector>
 #include <stack>
 
 using namespace std;

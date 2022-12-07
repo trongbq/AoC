@@ -1,7 +1,6 @@
 #include <fstream>
 #include <iostream>
 #include <map>
-#include <string>
 
 using namespace std;
 
@@ -22,7 +21,7 @@ int main() {
         getline(myfile, line);
         myfile.close();
 
-        // A map contains the position of 4 recent chars so far.
+        // A map contains the position of 14 recent chars so far.
         map<char, int> mem;
         for (int i = 0; i < line.length(); i++) {
             char curr = line.at(i);
