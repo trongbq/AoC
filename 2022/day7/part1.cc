@@ -132,6 +132,7 @@ int main() {
                 cout << "Unexpected line:" << line << endl;
             }
         }
+        myfile.close();
 
         cout << "$ tree ." << endl;
         print_content(&root, 0);

@@ -154,6 +154,7 @@ int main() {
                 cout << "Unexpected line:" << line << endl;
             }
         }
+        myfile.close();
 
         fill_node_size(&root);
 
