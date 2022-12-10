@@ -13,8 +13,6 @@ int main (int argc, char *argv[]) {
     }
 
     if (my_file.is_open()) {
-        int c = 0;
-
         int current_value = 1;
         vector<int> signals;
         string line;
