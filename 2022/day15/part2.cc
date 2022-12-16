@@ -80,6 +80,7 @@ int main (int argc, char *argv[]) {
 
         // start doing some real work
         for (int y = 0; y <= max_y; y++) {
+            // segment list contains all segment of where beacons can not be in this line y
             vector<Segment> segments;
             for (int i = 0; i < data.size(); i++) {
                 Point2D sensor = data[i].sensor;
@@ -99,6 +100,8 @@ int main (int argc, char *argv[]) {
 
             sort(segments.begin(), segments.end());
 
+            // Check all segments to see if any point x that those segments do not cover
+            // -> that the point x we're looking for.
             int curr = 0;
             for (int i = 1; i < segments.size(); i++) {
                 if (segments[i].from - segments[curr].to > 1) {
