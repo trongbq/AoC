@@ -1,8 +1,6 @@
 import sys
 import re
-import queue
 from tqdm import tqdm
-from math import factorial
 
 
 def parse_input(file_name):
@@ -92,10 +90,10 @@ def with_elephant(rates, dist):
 
     mp = 0
     n = len(paths)
-    with tqdm(total=n-1) as pbar:
-        for i in range(n-1):
-            for j in range(i+1, n):
-                if (set(paths[i]).isdisjoint(paths[j])):
+    with tqdm(total=n - 1) as pbar:
+        for i in range(n - 1):
+            for j in range(i + 1, n):
+                if set(paths[i]).isdisjoint(paths[j]):
                     mp = max(mp, pressures[i] + pressures[j])
             pbar.update(1)
     return mp
@@ -110,6 +108,7 @@ def main(file_name):
 
     print("Part 1: ", solo(rates, dist))
     print("Part 2: ", with_elephant(rates, dist))
+
 
 if __name__ == "__main__":
     file_name = "input_sample.txt" if len(sys.argv) > 1 and sys.argv[1] == "-t" else "input.txt"
